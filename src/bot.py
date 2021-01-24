@@ -4,7 +4,7 @@ import json
 
 bot = discord.Client()
 
-jdata = json.load(open("config.json"))
+jdata = json.load(open("config.json","r",encoding="utf8"))
 replies = jdata["replies"]
 commands = jdata["commands"]
 bot_token = jdata["token"]
